@@ -17,8 +17,11 @@ class _HomeState extends State<Home> {
       body: Container(
         child: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.all(40))
-
+            Padding(padding: EdgeInsets.all(40)),
+            Image.asset("images/logop.png"),
+            ElevatedButton(
+                onPressed:(){},
+                child: Text(""))
           ],
         ),
       ),
