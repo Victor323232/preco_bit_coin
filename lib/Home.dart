@@ -19,7 +19,10 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             Padding(padding: EdgeInsets.all(40)),
             Image.asset("images/logop.png"),
-            ElevatedButton(
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Color(0xffffc32b),
+              ),
                 onPressed:(){},
                 child: Text("Atualizar"))
           ],
