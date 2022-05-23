@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
             Image.asset("images/logop.png"),
             ElevatedButton(
                 onPressed:(){},
-                child: Text(""))
+                child: Text("Atualizar"))
           ],
         ),
       ),
