@@ -11,7 +11,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Preço BitCoin"),
+      ),
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Padding(padding: EdgeInsets.all(40))
 
+          ],
+        ),
+      ),
     );
   }
 }
