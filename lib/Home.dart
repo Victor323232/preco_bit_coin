@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'dart:async';
+
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -11,8 +15,14 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   String _preco = "0";
-  void _recuperarPreco(){
+  void _recuperarPreco () async {
+      String url = "https://blockchain.info/ticker";
+      http.Response response = await http.get(url); //aguarda essa consulta
+     Map<String, dynamic> rotorno = jsonDecode(response.body);
 
+     setState(() {
+       _preco = rotorno ["BRL"] ["buy"].toString();
+     });
   }
 
   @override
