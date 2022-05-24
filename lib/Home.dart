@@ -18,13 +18,16 @@ class _HomeState extends State<Home> {
         child: Column(
           children: <Widget>[
             Padding(padding: EdgeInsets.all(40)),
-            Image.asset("images/logop.png"),
-            TextButton(
-              style: TextButton.styleFrom(
-                backgroundColor: Color(0xffffc32b),
-              ),
-                onPressed:(){},
-                child: Text("Atualizar"))
+            Image.asset("images/logo.png"),
+            Padding(padding: EdgeInsets.only(top: 10),
+             child:   TextButton(
+                 style: TextButton.styleFrom(
+                   backgroundColor: Color(0xffffc32b)),
+                 onPressed:(){},
+                 child: Text("Atualizar")
+             ),
+            )
+
           ],
         ),
       ),
